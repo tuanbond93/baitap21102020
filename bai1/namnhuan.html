@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="Nhập số năm" id="nam"> </input>
+    <button onclick="kiemtra()">Kiểm tra năm</button>
+    <p id="phatngon"></p>
+    <script>
+        let nam = document.getElementById("nam").value;
+        switch (nam) {
+            case (nam%400 == 0) : document.getElementById("phatngon").innerHTML = "Đây là năm nhuận";
+            break;
+        }
+    </script>
+</body>
+</html>
